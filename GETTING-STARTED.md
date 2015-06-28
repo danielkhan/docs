@@ -5,14 +5,15 @@ docs. If you're here, you're likely looking for guidance on how to write
 documentation for the project. You're in luck! This is where we house all of
 that information.
 
-This guide is divided into **why** we're writing docs, **what** we want to
-write, and **how** we write it. 
+This guide is divided into sections for **why** we're writing docs, **what** we
+want to write, and **how** we write it.
 
-* If you're new here, start from the top and go down. 
-* If you're ready to write some docs, but don't know what to write, look at the
-second section.
-* If you're having trouble with formatting, or have a grammar question, look at
-the last section.
+* If you're new here, start from the top with the [Why We Write Docs section][]
+and go down.
+* If you're ready to write some docs but don't know what to write, look at the
+[What We Write section][].
+* If you have a formatting or grammar question, look at the
+[How We Write section][].
 
 ## Why We Write Docs
 
@@ -27,8 +28,8 @@ We write docs because we want to include people from each of these audiences in
 our community, we want to make their lives better, and we want them to walk
 away from the docs with a positive attitude about the Node community. We want
 this not just out of empathy for our fellow human beings, but also out of
-selfish self-preservation: the health of Node hinges on how useful it is, and
-how useful it is depends on how easy it is for folks to use it! If folks can't
+self-preservation: the health of Node hinges on how useful it is, and how
+useful it is depends on how easy it is for folks to use it! If folks can't
 figure out how to use Node, they walk away from it, and then we have to start
 writing for a different platform which might not be nearly [as fun][].
 
@@ -46,17 +47,16 @@ Node.
 A solid strategy around structure is key to building good documentation.
 Authors must know where to put a topic before they can start writing it — they
 need to know the larger context of how the reader will get to that document.
-Misplaced documentation won't be found, or, more disasterously, will appear
+Misplaced documentation won't be found, or, more disastrously, will appear
 interleaved in other documentation, which is hugely confusing!
 
 For that reason, we split our writing into three categories:
 
-1. Guides — documents written to guide a reader through a process, in order to
-help them learn a concept in service of their larger goal.
-2. Topic — documents written to explain a concept, in order to help the reader
-make a decision.
-3. Reference — documents written to inform or remind a user of a capability, in
-order to help the user achieve their goal.
+1. **Guide** documents explain processes to help the reader learn a concept in
+service of their larger goal.
+2. **Topic** documents explain concepts to help the reader make a decision.
+3. **Reference** documents explain capabilities to help the reader achieve
+their goal.
 
 The larger structure of the project reflects this — there is a `guides`
 directory, a `topics` directory, and a `reference` directory.
@@ -113,7 +113,7 @@ strategies are in service of that goal.
 
 ## How We Write
 
-* Documents are written in markdown files. 
+* Documents are written in markdown files.
 * Those files should be written in **`lowercase-with-dashes.md`.**
   * Underscores in filenames are allowed only when they are present in the
     topic the document will describe (e.g., `child_process`.)
@@ -121,7 +121,8 @@ strategies are in service of that goal.
   * Older files may use the `.markdown` extension. These may be ported to `.md`
     at will. **Prefer `.md` for all new documents.**
 * Documents should be word-wrapped at 80 characters.
-* Documents should not contain trailing whitespace.
+* The formatting described in `.editorconfig` is preferred.
+  * A [plugin][] is available for some editors to automatically apply these rules.
 * Mechanical issues, like spelling and grammar, should be identified by tools,
   insofar as is possible. If not caught by a tool, they should be pointed out by
   human reviewers.
@@ -161,7 +162,7 @@ strategies are in service of that goal.
     please keep a close eye on the filesize of the asset you're introducing.
 * For code blocks:
   * Use language aware fences. ("```js")
-  * Code need not be complete — treat code blocks as an illustration or aide to
+  * Code need not be complete — treat code blocks as an illustration or aid to
     your point, not as complete running programs. If a complete running program
     is necessary, include it as an asset in `assets/code-examples` and link to
     it.
@@ -187,3 +188,7 @@ targeting. For more information on this, see [CONTRIBUTING.md][].
 [as fun]: https://twitter.com/izs/status/187639633641865216
 [Oxford comma]: https://en.wikipedia.org/wiki/Serial_comma
 [CONTRIBUTING.md]: CONTRIBUTING.md
+[plugin]: http://editorconfig.org/#download
+[Why We Write Docs section]: #why-we-write-docs
+[What We Write section]: #what-we-write
+[How We Write section]: #how-we-write
