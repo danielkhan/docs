@@ -3,11 +3,11 @@
 This page describes the various ways to install Node depending on your platform
 and personal preference.
 
-## Using and installer
+## Using an Installer
 This is the easiest way to get started on *Windows* and *OS X*. Simply download
 the installer from [nodejs.org][nodejs org], run it and follow the steps.
-This will install the `node` binary along with the **N**ode **P**ackage
-**M**anager `npm` on your system.
+This will install the `node` binary along with the Node Package
+Manager `npm` on your system.
 
 
 ### See if it worked
@@ -29,6 +29,11 @@ $ <sudo> npm install npm -g
 $ npm -v
 2.11.3 # The exact version number may vary
 ```
+
+## Using a Package Manager
+On most *Linux* blends as well as *OS X* package managers can be used to fetch
+and install software.
+
 
 [nodejs org]: https://nodejs.org/
 [npmjs org]: https://npmjs.org/
